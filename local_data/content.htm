@@ -106,8 +106,7 @@
 <p><span style="background-color: #ffff00;">心得 : </span>我們的幻想不是無法實現!是目前的科技與實力無法造就出神人般的我們!比起架設網站與伺服器,更想嘗試利用伺服器共同開發機器人或是網路伺服器控制機器人,這也是我選擇機械設計的理由.</p>
 <h1>期末課程</h1>
 <h2>期末目標</h2>
-<p>學習如何配置<a href="https://github.com/mdecourse/wcms2018/issues/7#issuecomment-383855790">群準 UEFI V8 防寫卡</a>安裝, 硬碟分割, 軟體安裝, 分割複製與網路複製</p><h2>課程內容2</h2>
-<h3>組裝網路線與跳線器</h3>
+<p>配置群準 UEFI V8 防寫卡安裝,硬碟分割</p><h2>課程內容2</h2><p>組裝網路線與跳線器</p><p>Ubuntu 18.04</p><p>如何在校外下載學校授權軟體</p><p>intel virtualization (虛擬化技術)</p><p>FileZilla</p><p>電腦如何開機</p><p>cmsimfly設計要點</p><h3>組裝網路線與跳線器</h3>
 <p><img src="/download/?type=images&amp;filename=T568AB.jpg" alt="" width="391" height="222" /></p>
 <p>網路線&nbsp; &nbsp;T-568B + T-568B</p>
 <p>跳線器&nbsp; &nbsp;T-568A + T-568B</p>
@@ -120,7 +119,45 @@
 <h3>intel virtualization (虛擬化技術)</h3>
 <p>把CPU擬化技術打開的好處</p>
 <p>虛擬主機可以使用64位元的作業系統</p>
-<h3>FileZilla</h3><p>用於SFTP(Secure File Transfer Protocol)</p><p>SFTP也稱為<strong>SSH檔案傳輸協議</strong>(<span class="LangWithName"><span lang="en"><strong>SSH File Transfer Protocol)</strong></span></span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h1>問卷</h1>
+<h3>FileZilla</h3>
+<p>用於SFTP(Secure File Transfer Protocol)</p>
+<p>SFTP也稱為<strong>SSH檔案傳輸協議</strong>(<span class="LangWithName"><span lang="en"><strong>SSH File Transfer Protocol)</strong></span></span></p>
+<h3>電腦如何開機</h3>
+<p>傳統BIOS開機流程</p>
+<p>1.初始化</p>
+<p>2. POST（Power On Self Test；開機自我檢測)</p>
+<p>3. 記錄電腦系統的設定值</p>
+<p>4. 提供常駐程式</p>
+<p>5. 載入作業系統</p>
+<p>&nbsp;</p>
+<p>UEFI BIOS系統的開機流程</p>
+<p>1.SEC(Security)階段.</p>
+<p>其主要的特色為cache as RAM，即處理器的快取當成記憶體</p>
+<p>2. PEI（EFI前初始化）階段</p>
+<p>用以喚醒CPU及記憶體初始化</p>
+<p>3. DXE階段</p>
+<p>主要功能在於溝通EFI驅動程式及硬體</p>
+<p>4. BDS（開機設備選擇）階段</p>
+<p>使用者就可以自開機管理者程式頁面，選擇要從哪個偵測到的開機設備來啟動</p>
+<p>5. TSL（短暫系統載入）階段</p>
+<p>由作業系統接手開機</p>
+<h3>cmsimfly設計要點</h3>
+<p>所有編輯內容皆存在local_data &rarr; content.html</p>
+<p>上傳的檔案在&nbsp;&rarr; downloads</p>
+<p>上傳的影象在&nbsp;&rarr; images</p>
+<p>設定檔&nbsp;&rarr; comfig</p>
+<p>分割頁面時是使用 python 尋找&nbsp; &lt;h1&gt; &lt;/h1&gt;</p>
+<p>所以不能有重複標題</p>
+<p>但改成資料庫後就可以有重複標題</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><h1>問卷</h1>
 <h2>意見提供</h2>
 <p>&nbsp;</p>
 <p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3CnGrYr_68T4R0LwJFdEodm7dSic0oXLO_0MpCF2X_Hahxg/viewform?embedded=true" width="760" height="500" frameborder="0" marginwidth="0" marginheight="0">載入中…</iframe></p>
