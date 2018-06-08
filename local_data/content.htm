@@ -106,7 +106,15 @@
 <p><span style="background-color: #ffff00;">心得 : </span>我們的幻想不是無法實現!是目前的科技與實力無法造就出神人般的我們!比起架設網站與伺服器,更想嘗試利用伺服器共同開發機器人或是網路伺服器控制機器人,這也是我選擇機械設計的理由.</p>
 <h1>期末課程</h1>
 <h2>期末目標</h2>
-<p>配置群準 UEFI V8 防寫卡安裝,硬碟分割</p><h2>課程內容2</h2><p>組裝網路線與跳線器</p><p>Ubuntu 18.04</p><p>如何在校外下載學校授權軟體</p><p>intel virtualization (虛擬化技術)</p><p>FileZilla</p><p>電腦如何開機</p><p>cmsimfly設計要點</p><h3>組裝網路線與跳線器</h3>
+<p>配置群準 UEFI V8 防寫卡安裝,硬碟分割</p><h2>課程內容2</h2>
+<p>組裝網路線與跳線器</p>
+<p>Ubuntu 18.04</p>
+<p>如何在校外下載學校授權軟體</p>
+<p>intel virtualization (虛擬化技術)</p>
+<p>FileZilla</p>
+<p>電腦如何開機</p>
+<p>cmsimfly設計要點</p>
+<p>使用 lua 網際繪圖</p><h3>組裝網路線與跳線器</h3>
 <p><img src="/download/?type=images&amp;filename=T568AB.jpg" alt="" width="391" height="222" /></p>
 <p>網路線&nbsp; &nbsp;T-568B + T-568B</p>
 <p>跳線器&nbsp; &nbsp;T-568A + T-568B</p>
@@ -149,15 +157,7 @@
 <p>分割頁面時是使用 python 尋找&nbsp; &lt;h1&gt; &lt;/h1&gt;</p>
 <p>所以不能有重複標題</p>
 <p>但改成資料庫後就可以有重複標題</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p><h1>問卷</h1>
+<h3>使用 lua 網際繪圖</h3><p><a href="http://mde.tw/vecp2018/lua/SchoolProject/">http://mde.tw/vecp2018/lua/SchoolProject/</a></p><pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">  -- 導入 "js" 模組local js = require "js"-- global 就是 javascript 的 windowlocal global = js.globallocal document = global.document-- html 檔案中 canvas　id 設為 "canvas"local canvas = document:getElementById("canvas")-- 將 ctx 設為 canvas 2d 繪圖畫布變數local ctx = canvas:getContext("2d")-- 屬性呼叫使用 . 而方法呼叫使用 :-- 設定填圖顏色ctx.fillStyle = "rgb(200,0,0)"-- 設定畫筆顏色ctx.strokeStyle = "rgb(0,0,200)"function star(xs, ys, xe, ye)    ctx:beginPath()    ctx:moveTo(xs,ys)    ctx:lineTo(xe,ye)endfunction star2(a, b, c, d ,e)    --a = 教師休息室走道寬    --b = 教室前走道寬    --c = 4間教師休息室寬    --d = 教師休息室長    --e = 電梯出來左轉走道長    star(0, 0, c+b+c, 0)    ctx:closePath()    ctx:stroke()    --最北邊牆    star(0, 0, 0, d+a+e)    ctx:closePath()    ctx:stroke()     --最西邊牆    star(c+b+c, 0, c+b+c, d+a+e)    ctx:closePath()    ctx:stroke()    --最東邊牆    star(0, d+a+e, c+b+c, d+a+e)    ctx:closePath()    ctx:stroke()    --最南邊牆    star(c, 0, c, d)    ctx:closePath()    ctx:stroke()    --左側休息室最右牆    star(c*3/4, 0, c*3/4, d)    ctx:closePath()    ctx:stroke()    --左側休息室最右2牆    star(c*2/4, 0, c*2/4, d)    ctx:closePath()    ctx:stroke()    --左側休息室最右3牆    star(c*1/4, 0, c*1/4, d)    ctx:closePath()    ctx:stroke()    --左側休息室最右4牆    star(c, d, 0, d)    ctx:closePath()    ctx:stroke()    --左休息室下方牆    star(c, d+a, 0, d+a)    ctx:closePath()    ctx:stroke()    --右休息室對面牆    star(c, d+a, c, d+a+e)    ctx:closePath()    ctx:stroke()    --走道左側牆    star(c+b, 0, c+b, d)    ctx:closePath()    ctx:stroke()    --右側休息室最左牆    star(c+b+c*3/4, 0, c+b+c*3/4, d)    ctx:closePath()    ctx:stroke()    --右側休息室左2牆    star(c+b+c*2/4, 0, c+b+c*2/4, d)    ctx:closePath()    ctx:stroke()    --右側休息室左3牆    star(c+b+c*1/4, 0, c+b+c*1/4, d)    ctx:closePath()    ctx:stroke()    --右側休息室左4牆    star(c+b, d, c+b+c, d)    ctx:closePath()    ctx:stroke()    --右休息室下方牆    star(c+b, d+a, c+b+c, d+a)    ctx:closePath()    ctx:stroke()    --右休息室對面牆    star(c+b, d+a, c+b, d+a+e)    ctx:closePath()    ctx:stroke()    --走道右側牆endstar2(25, 75, 125, 60, 300)</pre><p><img src="/download/?type=images&amp;filename=成品圖.png" alt="" width="328" height="396" /></p><h1>問卷</h1>
 <h2>意見提供</h2>
 <p>&nbsp;</p>
 <p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3CnGrYr_68T4R0LwJFdEodm7dSic0oXLO_0MpCF2X_Hahxg/viewform?embedded=true" width="760" height="500" frameborder="0" marginwidth="0" marginheight="0">載入中…</iframe></p>
